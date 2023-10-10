@@ -17,7 +17,7 @@ section{
 /* HEADER */
 
 .banner{
-    background-image: linear-gradient(rgba(0,0,0,.6), rgba(49,168,221, .2), rgba(0,0,0,.6)), url(../images/banner_code.png);
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(49,168,221, .2), rgba(0,0,0,.6)), url(../images/background_code_top.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
@@ -60,12 +60,14 @@ section{
 
 .banner .logo img{
     margin: auto;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
+    margin-top: 26px;
 }
 
 button {
+    /* border-radius: 30px; */
     color: #31a8dd;
     font-size: 1rem;
     font-weight: bold;
@@ -73,15 +75,14 @@ button {
     text-transform: uppercase;
     letter-spacing: 3px;
     background-color: transparent;
-    border-image: linear-gradient(#3ba1cd, #1572b7);
+    border-image: linear-gradient(#3ba1cd, #1472b7);
     border-image-slice: 10;
     text-align: center;
-    /* border-radius: 30px; */
   }
   
 button:hover {
-    background-color: #ffffff;
-    color: #31a8dd;
+    background-image: linear-gradient(#3ba1cd, #023c68);;
+    color: #fff;
 }
 
 /* MAIN */
@@ -99,6 +100,7 @@ button:hover {
     text-transform: uppercase;
     margin-top: 70px;
     margin-bottom: 24px;
+    margin-left: 50px;
 }
 
 #course-content p{
@@ -106,21 +108,29 @@ button:hover {
     font-size: 1.25rem;
 }
 
-#course-content .modules{
+.modules{
     margin: 24px 0;
 }
 
-#course-content .modules .module{
+.module{
     color: #fff;
     width: 530px;
     margin: 0  auto 24px;
     border: 1px solid #33a8db;
-    background-color: #252525;
+    background-color: #000000;
     padding: 16px;
     border-radius: 100px;
-    box-shadow: inset -5px 6px 8px rgba(0,0,0,.7);
+    box-shadow: inset 3px -3px 9px rgba(83, 179, 219, 0.5);
     list-style: none;
-    text-transform: capitalize;
+    text-transform: initial;
+}
+
+.module:hover{
+    background-image: linear-gradient(#3ba1cd, #023c68);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #transform-world{
@@ -170,7 +180,7 @@ button:hover {
     color: #fff;
     text-align: center;
     padding: 30px 0;
-    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, 0.2));
     font-weight: bold;
     border-bottom: 2px solid #33a8db80;
 }
