@@ -1,0 +1,31 @@
+@import url(./global.css);
+@import url(./reset.css);
+
+nav img {
+    height: 30px;
+    margin: 0 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(8, 0, 119);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 3rem;
+}
+ul {
+    display: flex;
+    gap: 1.5rem;
+}
+section {
+    background: linear-gradient( rgba(122, 122, 122, 0.5), rgba(3, 28, 99, 0.9), rgba(122, 122, 122, 0.5));
+}
+section img {
+    width: 100vw;
+    opacity: 30%;
+}
