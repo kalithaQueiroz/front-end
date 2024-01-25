@@ -1,6 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
+    /* Colors RGB*/
+    --primary-color: #020228;
+    --secundary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --text-color: #ffffff;
+    --link-color: #9e86ff;
+    --btn-link-bg-color: #ffffff;
+    --btn-link-color: #000000;
+
+    /* Colors RGBA*/
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
     
+    /* Gradients */
+    --btn-bg-color: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 50%);
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5)80%);
+
+    /* BORDER */
+    --border-color-one: 1px solid #b535f6;
+    --border-color-two: 1px solid #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Navbar  */
+
+.nav-bar {
+    width: 100%;
+    padding: 12px 16px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg-color);
+    z-index: 1;
+}
+
+.nav-bar-logo{
+    max-width: 160px;
+}
+
+.nav-bar-logo-image {
+    width: 100%;
+}
+
+/* Buttom */
+
+.btn-geral {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-comein {
+    padding: 8px 26px;
+    transition: 1s;
+    border-radius: 500px;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    margin-right: 24px;
+}
+
+.btn-comein:hover {
+    border: var(--border-color-one);
+}
+
+.btn-tosign {
+    padding: 8px 26px;
+    transition: 1s;
+    border-radius: 500px;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    background-color: var(--tertiary-color);
+    border: var(--border-color-one);
+}
+
+.btn-tosign:hover {
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+    border: var(--border-color-two);
 }
