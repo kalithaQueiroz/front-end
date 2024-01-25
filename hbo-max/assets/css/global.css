@@ -99,3 +99,43 @@ p {
     color: var(--btn-link-color);
     border: var(--border-color-two);
 }
+
+/* FOOTER */
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-link {
+    font-weight: bold;
+    color: var(--link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 14px;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    transition: 0.5s;
+}
+
+.footer-link:hover {
+    color: var(--text-color);
+}
+
+.footer,p {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin: 20px 0 0 0;
+    color: var(--link-color);
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0 0 0;
+}
