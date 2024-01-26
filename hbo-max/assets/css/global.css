@@ -13,16 +13,21 @@
     --btn-link-color: #000000;
 
     /* Colors RGBA*/
+    --form-error: rgba(255, 76, 76);
     --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-placeholder: rgba(255, 255, 255, 0.7);
     
     /* Gradients */
-    --btn-bg-color: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 50%);
+    --btn-bg-color-gradient: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 50%);
     --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
     --divider-bg-color: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5)80%);
-
+    
     /* BORDER */
     --border-color-one: 1px solid #b535f6;
     --border-color-two: 1px solid #ffffff;
+    --border-form: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 * {
@@ -64,11 +69,30 @@ p {
 /* Buttom */
 
 .btn-geral {
+    padding: 16px;
+    background-color: var(--tertiary-color);
     text-decoration: none;
-    text-transform: uppercase;
-    color: var(--text-color);
-    cursor: pointer;
+    border-radius: 500px;
     font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-gradient {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: 1s;
+    background-size: 250%;
+}
+
+.btn-gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secundary-color);
 }
 
 .btn-comein {
@@ -78,10 +102,12 @@ p {
     letter-spacing: 2px;
     font-size: 0.75rem;
     margin-right: 24px;
+    background-color: transparent;
 }
 
 .btn-comein:hover {
-    border: var(--border-color-one);
+    transition: 1s;
+    outline: 1px solid var(--secundary-color);
 }
 
 .btn-tosign {
@@ -103,7 +129,6 @@ p {
 /* FOOTER */
 
 .footer {
-    max-width: 1200px;
     margin: auto;
     padding: 20px;
     text-align: center;
