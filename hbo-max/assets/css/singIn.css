@@ -1,4 +1,4 @@
-/* @import url("reset.css"); */
+@import url("reset.css");
 @import url("global.css");
 
 .body-singin {
@@ -76,3 +76,17 @@
 
 /* Media Queries */
 
+@media screen and (max-width: 400px) {
+    body {
+        height: auto;
+    }
+
+    .main-actions .btn-geral{
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    .login-link {
+        margin: 0;
+    }
+}
