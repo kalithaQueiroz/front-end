@@ -1,7 +1,7 @@
-@import url("reset.css");
+/* @import url("reset.css"); */
 @import url("global.css");
 
-body {
+.body-singin {
     background-image: url(../images/background-movies-series.png);
     background-size: cover;
     height: 100vh;
