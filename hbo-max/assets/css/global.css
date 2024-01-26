@@ -29,6 +29,8 @@
     --border-color-one: 1px solid #b535f6;
     --border-color-two: 1px solid #ffffff;
     --border-form: 1px solid rgba(255, 255, 255, 0.7);
+
+    scroll-behavior: smooth;
 }
 
 * {
@@ -43,6 +45,10 @@ body {
 
 p {
     font-family: "Quicksand", sans-serif;
+}
+
+section {
+    scroll-margin-top: 80px;
 }
 
 /* Navbar  */
@@ -169,4 +175,18 @@ p {
 /* Media Queries */
 
 
+
 /* Custom Scroll */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secundary-color);
+}
