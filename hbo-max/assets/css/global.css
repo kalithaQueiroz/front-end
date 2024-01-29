@@ -34,11 +34,13 @@
 }
 
 * {
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
     background-color: var(--primary-color);
     color: var(--text-color);
 }
@@ -76,9 +78,8 @@ section {
 /* Buttom */
 
 .btn-geral {
-    padding: 16px;
+    padding: 16px 40px;
     background-color: var(--tertiary-color);
-    text-decoration: none;
     border-radius: 500px;
     font-weight: 700;
     color: var(--text-color);
@@ -100,7 +101,10 @@ section {
     background-color: transparent;
     background-position: 100%;
     outline: 2px solid var(--secundary-color);
+    transform: scale(1.05);
 }
+
+/* Navbar */
 
 .btn-comein {
     padding: 8px 26px;
@@ -135,46 +139,74 @@ section {
 
 /* FOOTER */
 
-.footer {
+footer {
+    max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 24px;
     text-align: center;
 }
 
 .footer-link {
+    font-family: "Raleway", sans-serif;
     font-weight: bold;
     color: var(--link-color);
     text-transform: uppercase;
     text-decoration: none;
     margin: 0 14px;
     letter-spacing: 2px;
+    transition: color 0.5s;
     font-size: 0.875rem;
-    transition: 0.5s;
 }
 
 .footer-link:hover {
     color: var(--text-color);
 }
 
-.footer,p {
+.footer-legal {
     font-size: 0.75rem;
-    font-weight: 300;
-    margin: 20px 0 0 0;
+    margin: 16px 0;
     color: var(--link-color);
+    font-weight: 300;
 }
 
 .footer-redes {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 40px;
-    margin: 20px 0 0 0;
+    margin-top: 80px;
 }
 
 /* Media Queries */
 
+@media screen and (max-width: 500px) {
+    section {
+        scroll-margin-top: 120px;
+    }
 
+    .nav-bar {
+        padding: 32px 24px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .nav-bar-logo {
+        max-width: 100px;
+    }
+
+    .btn-tosign {
+        margin: 0;
+    }
+
+    .header {
+        margin-top: 128px !important;
+    }
+
+    .footer-link {
+        display: block;
+        margin-bottom: 16px;
+    }
+}
 
 /* Custom Scroll */
 
