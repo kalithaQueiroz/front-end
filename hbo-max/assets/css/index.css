@@ -17,7 +17,7 @@
     height: 250px;
     position: absolute;
     bottom: 0;
-    background: var(--index-bg);
+    background:linear-gradient(0deg, var(--primary-color), transparent);
 }
 
 .header-content {
@@ -161,7 +161,128 @@
     margin-bottom: 16px;
 }
 
+.contents {
+    margin: 100px auto;
+}
 
+.contents-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.contents-card {
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.contents-card:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+}
+
+.contents-card:hover .contents-image {
+    opacity: 0;
+}
+
+.contents-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+}
+
+.contents-card:nth-child(1):hover {
+    background-image: url(../images/hbo-hover.webp);
+}
+.contents-card:nth-child(2):hover {
+    background-image: url(../images/mo-hover.webp);
+}
+.contents-card:nth-child(3):hover {
+    background-image: url(../images/DC-hover.webp);
+}
+.contents-card:nth-child(4):hover {
+    background-image: url(../images/WB-Hover.webp);
+}
+.contents-card:nth-child(5):hover {
+    background-image: url(../images/CN-Hover.png);
+}
+.contents-card:nth-child(6):hover {
+    background-image: url(../images/UCL-Hover.webp);
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1200px) {
+    .subscription-plans {
+      gap: 40px;
+    }
+  
+    .contents-container {
+      gap: 32px;
+    }
+  }
+  
+  @media screen and (max-width: 1140px) {
+    .subscription-plans {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subscription-card {
+      max-width: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .contents-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .subscription-price {
+      font-size: 1.5rem;
+    }
+  
+    .subscription-description {
+      font-size: 1rem;
+    }
+  
+    .subscription-plan {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .subscription-card {
+      padding: 40px;
+    }
+  
+    .contents-container {
+      grid-template-columns: repeat(6, 100%);
+      grid-auto-flow: column;
+      overflow: auto hidden;
+    }
+  }
+  
+  @media (pointer: coarse) {
+    .contents-card:hover {
+      transform: none;
+    }
+  
+    .subscription-plans:has(.subscription__card:nth-child(1):hover)
+      .subscription-card:nth-child(2),
+    .subscription-plans:has(.subscription__card:nth-child(2):hover)
+      .subscription-card:nth-child(1) {
+      transform: none;
+    }
+  }
 
 /* Animations */
 
