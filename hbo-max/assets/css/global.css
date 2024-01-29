@@ -18,13 +18,13 @@
     --form-bg-color: rgba(211, 211, 211, 0.06);
     --form-field-bg-color: rgba(0, 0, 0, 0.2);
     --form-placeholder: rgba(255, 255, 255, 0.7);
-    
+
     /* Gradients */
     --index-bg: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     --btn-bg-color-gradient: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 50%);
     --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
     --divider-bg-color: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5)80%);
-    
+
     /* BORDER */
     --border-color-one: 1px solid #b535f6;
     --border-color-two: 1px solid #ffffff;
@@ -43,6 +43,13 @@
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
 }
 
 p {
@@ -67,7 +74,7 @@ section {
     z-index: 1;
 }
 
-.nav-bar-logo{
+.nav-bar-logo {
     max-width: 160px;
 }
 
